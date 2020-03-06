@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>선택자</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function () {
+	   	// body...
+	   	$("*").css('color', 'blue');
+	   	$("#id_select").css('background-color', 'yellow'); 
+	   	$(".class_select").css('background-color', 'orange');
+	   	$("p").css('background-color', 'olive');
+	   	$("th, h4").css('background-color', 'pink');
+	   	$("#parent > p").css('background-color', 'skyblue');
+
+	   })
+	</script> 
+	<div style="border: 1px solid blue">전체 선택자
+		<h1>hello! world</h1>
+		<h2>hello! world</h2>
+		<h3>hello! world</h3>
+	</div>
+	<div style="border: 1px solid black">&nbsp;Id 선택자		
+		<h1 id ='id_select'>
+			&nbsp;id 는 #으로 검색합니다
+		</h1>
+	</div>
+	<div style="border: 1px solid black">&nbsp;Class 선택자		
+		<h1 class ='class_select'>
+			&nbsp;id 는 .으로 검색합니다
+		</h1>
+	</div>
+	<div style="border: 1px solid black">&nbsp;태그 선택자		
+		<p>&nbsp;row1</p>
+		<p>&nbsp;row2</p>
+		<p>&nbsp;row3</p>
+	</div>
+	<div style="border: 1px solid black">&nbsp;그룹 선택자<br>
+		<table style="border :1px solid black">
+			<h4>이건 테이블입니다</h4>
+			<th>col1</th>
+			<th>col2</th>
+			<th>col3</th>
+			<tr>
+				<td>1.1</td>
+				<td>1.2</td>
+				<td>1.3</td>
+			</tr>
+			<tr>
+				<td>2.1</td>
+				<td>2.2</td>
+				<td>2.3</td>
+			</tr>
+			<tr>
+				<td>3.1</td>
+				<td>3.2</td>
+				<td>3.3</td>
+			</tr>
+		</table>		
+	</div>
+	<div id ="parent"style="border: 1px solid black">&nbsp; 후손선택자
+		<p>자식</p>	
+	</div>
+	</html>
+</body>
