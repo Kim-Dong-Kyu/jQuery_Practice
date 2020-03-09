@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chain</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ <ul class="first">
+  <li class ="list_1">&nbsp;리스트 1번
+    <p></p>
+  </li>
+  <li class ="list_2">&nbsp;리스트 2번
+   <p></p>
+  </li>
+  <li class ="list_3">&nbsp;리스트 3번</li>
+  <li class ="list_4">&nbsp;리스트 4번</li>
+</ul>
+<ul class="secone" >
+  <li class ="list_1">&nbsp;리스트 1번
+    <p></p>
+  </li>
+  <li class ="list_2">&nbsp;리스트 2번</li>
+  <li class ="list_3">&nbsp;리스트 3번</li>
+  <li class ="list_4">&nbsp;리스트 4번</li>
+</ul>
+
+<script type="text/javascript">
+  $("ul.first")
+  .css('list-style', 'none');
+  $(".first")
+  .find(".list_1")
+  .find('p')
+  .css('background-color', 'olive')
+  .text('리스트 1의 내용입니다')
+  .end()
+  .end()
+  .find('.list_2')  
+  .find('p')
+  .css('background-color', 'yellow')
+  .text('리스트 2의 내용입니다');
+</script>
+
+
+</html>
+</body>
