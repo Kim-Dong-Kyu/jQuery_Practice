@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>element 제어</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>	
+	<h1>첫번째 줄입니다</h1>
+
+	<button id="button_remove">
+      remove
+	</button>
+    <script type="text/javascript">
+	$("h1").after("<h2>두번째 줄입니다</h2>");
+	$("#button_remove").click(function(event) {
+		$("#button_remove").remove();
+	});
+	</script>
+
+
+</body>
+</html>
